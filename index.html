@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ClinLab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-size: 48px;
+            margin-top: 50px;
+            color: #333;
+        }
+        .content {
+            padding: 20px;
+        }
+        .decorative-line {
+            border-top: 4px solid black;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .text {
+            font-size: 16px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+            color: #333;
+            line-height: 1.5;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .button {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #555;
+        }
+        .section {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .section.show {
+            display: block;
+            opacity: 1;
+        }
+        .app-info {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .app-info img {
+            max-width: 150px;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+        .app-info h3 {
+            margin-top: 0;
+        }
+        .app-info .download-button {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .app-info .download-button:hover {
+            background-color: #0056b3;
+        }
+        .app-details img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .app-details ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 16px;
+        }
+        .app-details ul li {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .discord-button {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #4a90e2;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .discord-button:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+<body>
+    <div class="discord-link">
+        <a href="https://discord.gg/4xXpMvCN" target="_blank">-Discord-</a>
+    </div>
+
+    <h1>ClinLab</h1>
+    
+    <div class="content">
+        <div class="decorative-line"></div>
+        
+        <p class="text">
+            Bienvenido a ClinLab, el laboratorio digital donde la innovación y la creatividad se encuentran.<br> 
+            Nos dedicamos a desarrollar y compartir las mejores aplicaciones, mods de juegos, exploits y herramientas tecnológicas.<br>
+            Ya seas un gamer entusiasta, un desarrollador curioso o alguien en busca de personalizar su experiencia digital, en ClinLab encontrarás todo lo necesario para experimentar y crear.<br> 
+            Únete a nosotros y explora un mundo lleno de posibilidades tecnológicas.
+        </p>
+        
+        <div class="button-container">
+            <button class="button" onclick="showSection('apps')">Apps</button>
+            <button class="button" onclick="showSection('cheats')">Cuentas & Cheteos</button>
+        </div>
+    </div>
+
+    <div id="apps" class="section">
+        <h2>Apps</h2>
+        <p>En esta sección encontrarás aplicaciones que suelen venderse, pero aquí están disponibles gratis, junto con mis propias aplicaciones de pago y otras de terceros a precios más bajos.</p>
+
+        <div class="app-info">
+            <img src="hp.png" alt="App 𝖍𝖕">
+            <div>
+                <h3>𝖍𝖕</h3>
+                <p><strong>Descripción:</strong> Esta es una aplicación innovadora que te permite encriptar archivos con su propio idioma y leer sus propios archivos. Es una herramienta potente para guardar contraseñas de la forma más segura posible, al estilo tradicional.</p>
+                <p><strong>Precio:</strong> Gratis</p>
+                <a href="https://modsfire.com/pN5iJiyqAanAalT" class="download-button" target="_blank">Descargar App</a>
+            </div>
+        </div>
+
+        <div class="app-info">
+            <img src="flushdns.png" alt="App FlushDNS">
+            <div>
+                <h3>FlushDNS</h3>
+                <p><strong>Descripción:</strong> Esta aplicación borra todo rastro de lo que hayas hecho en modo incógnito o cualquier actividad en Internet que se haya guardado. Es ideal para mantener tu privacidad y limpiar tu historial.</p>
+                <p><strong>Precio:</strong> Gratis</p>
+                <a href="https://modsfire.com/9hQzjUec6ca02SN" class="download-button" target="_blank">Descargar App</a>
+            </div>
+        </div>
+
+        <div class="app-info">
+            <img src="F2ko.png" alt="App F2ko">
+            <div>
+                <h3>F2ko</h3>
+                <p><strong>Descripción:</strong> F2ko es un convertidor de archivos .bat a .exe. Ideal para quienes necesitan convertir scripts en batch a ejecutables de Windows.</p>
+                <p><strong>Precio:</strong> Gratis</p>
+                <a href="https://modsfire.com/S3x5K8v5I4pbFM2" class="download-button" target="_blank">Descargar App</a>
+            </div>
+        </div>
+
+        <div class="app-info">
+            <img src="SilentEye.png" alt="App SilentEye">
+            <div>
+                <h3>SilentEye</h3>
+                <p><strong>Descripción:</strong> SilentEye es una aplicación de esteganografía que te permite ocultar scripts y datos dentro de imágenes. Con esta herramienta, puedes incrustar información oculta en imágenes, como virus o juegos, que solo se puede acceder si se sabe cómo desencriptarla.</p>
+                <p><strong>Precio:</strong> Gratis</p>
+                <a href="https://modsfire.com/y3I67NcO7D3Sw6X" class="download-button" target="_blank">Descargar App</a>
+            </div>
+        </div>
+
+        <div class="app-info">
+            <img src="blox.png" alt="App Bloxstrap">
+            <div>
+                <h3>Bloxstrap</h3>
+                <p><strong>Descripción:</strong> Bloxstrap es el instalador de Roblox sin anticheats, permitiéndote añadir exploits y scripts sin problemas ni baneos. Ideal para quienes buscan personalizar su experiencia en Roblox sin restricciones.</p>
+                <p><strong>Precio:</strong> Gratis</p>
+                <a href="https://modsfire.com/CR9J1t9WD0dM6J0" class="download-button" target="_blank">Descargar App</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="cheats" class="section">
+        <h2>Cuentas & Cheteos</h2>
+        <p>Esta sección contiene ventas sobre cuentas y cheteos disponibles.</p>
+
+        <div class="app-info">
+            <img src="juegos.png" alt="Cheteos">
+            <div>
+                <h3>Cheteos</h3>
+                <p><strong>Descripción:</strong> Venta de cheteos para tu cuenta para diversos juegos.</p>
+                <p><strong>Precio:</strong> Varía según el producto</p>
+                <a href="https://discord.gg/4xXpMvCN" class="download-button" target="_blank">Comprar Cheteos</a>
+            </div>
+        </div>
+
+        <div class="app-info">
+            <img src="cuentas.png" alt="Cuentas">
+            <div>
+                <h3>Cuentas</h3>
+                <p><strong>Descripción:</strong> Venta de cuentas premium o chetadas.</p>
+                <p><strong>Precio:</strong> Varía según el producto</p>
+                <a href="https://discord.gg/4xXpMvCN" class="download-button" target="_blank">Comprar Cuentas</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('show');
+            });
+            document.getElementById(sectionId).classList.add('show');
+        }
+    </script>
+</body>
+</html>
